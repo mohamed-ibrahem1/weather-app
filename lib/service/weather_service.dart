@@ -10,7 +10,6 @@ class WeatherService {
 
   WeatherService({required this.city});
 
-
   void getCurrentWeatherData({
     required Function() beforSend,
     required Function(CurrentWeatherData currentWeatherData) onSuccess,
@@ -43,7 +42,7 @@ class WeatherService {
     required Function(dynamic error) onError,
   }) {
     final url = '$baseUrl/forecast?q=$city&units=metric&$apiKey';
-    print(url);
+    //print(url);
     ApiRepository(url: url, payload: null).get(
         beforeSend: () => {},
         onSuccess: (data) => {

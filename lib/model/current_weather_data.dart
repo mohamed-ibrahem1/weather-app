@@ -5,6 +5,9 @@ import 'clouds.dart';
 import 'coord.dart';
 import 'main_weather.dart';
 
+// الكلاس دة معمول عشان تاخد منه الداتا اللي انت عايزها في صفحة ال 
+// HomePage
+
 class CurrentWeatherData {
   final Coord? coord;
   final List<Weather>? weather;
